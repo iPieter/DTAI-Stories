@@ -5,10 +5,10 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "DTAI"
+title = "DTAI Stories"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "dtai_logo.png"
+# hero_media = "dtai_logo.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -24,8 +24,8 @@ hero_media = "dtai_logo.png"
   # gradient_end = "#2b94c3"
   
   # Background image.
-  image = "home.png"  # Name of image in `static/img/`.
-  image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  image = "dtai_padded.png"  # Name of image in `static/img/`.
+  image_darken = 0.7  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
   text_color_light = true
@@ -33,11 +33,11 @@ hero_media = "dtai_logo.png"
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-[cta]
-  url = "https://dtai.cs.kuleuven.be/"
-  label = "A button with icon"
-  icon_pack = "fas"
-  icon = "code"
+#[cta]
+#  url = "https://dtai.cs.kuleuven.be/"
+#  label = "A button with icon"
+#  icon_pack = "fas"
+#  icon = "code"
   
 [cta_alt]
   url = "https://dtai.cs.kuleuven.be/"
@@ -45,9 +45,10 @@ hero_media = "dtai_logo.png"
 
 # Note. An optional note to show underneath the links.
 [cta_note]
-  label = '<a href="https://dtai.cs.kuleuven.be/">And another one</a>'
+  label = '<a href="https://dtai.cs.kuleuven.be/" target="_blank">More info about the DTAI research group</a>'
 +++
 
-**Catchy caption**
+**Declarative Languages and Artificial Intelligence**
 
-And some more **markdown** content
+DTAI is the Declarative Languages and Artificial Intelligence research group of the <a href="https://kuleuven.be/" target="_blank">KU Leuven</a> university.
+This platform contains short articles about our research.
