@@ -2,6 +2,9 @@
 
 // Limit Header size
 $navbar-height: 50px;
+.navbar {
+  height: $navbar-height;
+}
 body {
   margin-top: $navbar-height;
 
@@ -9,15 +12,21 @@ body {
   margin-bottom: 3em;
 }
 
-.navbar {
-  height: $navbar-height;
+// Decrease padding of sections
+.home-section {
+  &.wg-hero {
+    .hero-title {
+      padding-bottom: 1rem;
+    }
+    .hero-lead p {
+      padding-bottom: 1rem;
+    }
+    padding: 5em 0 6em 0;
 
-  // Don't hide clicked links
-  .navbar-nav .nav-link.active {
-    font-weight: bold !important;
-    color: #fff !important;
   }
+  padding: 4em 0 4em 0;
 }
+
 
 // Hide powered by
 .powered-by {
