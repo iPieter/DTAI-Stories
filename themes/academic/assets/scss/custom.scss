@@ -1,5 +1,19 @@
 // Override this file to add your own SCSS styling.
-.navbar .navbar-nav .nav-link.active {
-  font-weight: bold !important;
-  color: #fff !important;
+$navbar-height: 50px;
+body {
+  margin-top:$navbar-height;
+}
+.navbar {
+  height: $navbar-height;
+
+  .navbar-nav .nav-link.active {
+    font-weight: bold !important;
+    color: #fff !important;
+  }
+
+  .powered-by {
+    &, & a {
+      color: #ddd !important;
+    }
+  }
 }
