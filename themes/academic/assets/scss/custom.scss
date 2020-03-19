@@ -1,19 +1,35 @@
 // Override this file to add your own SCSS styling.
+
+// Limit Header size
 $navbar-height: 50px;
 body {
-  margin-top:$navbar-height;
+  margin-top: $navbar-height;
 }
+
 .navbar {
   height: $navbar-height;
 
+  // Don't hide clicked links
   .navbar-nav .nav-link.active {
     font-weight: bold !important;
     color: #fff !important;
   }
+}
 
-  .powered-by {
-    &, & a {
-      color: #ddd !important;
+// Hide powered by
+.powered-by {
+  &, & a {
+    color: #ddd !important;
+  }
+}
+
+// Made tag clouds not transform when hovering
+.tag-cloud {
+  a {
+    color: #166a84;
+    &:hover, &:focus {
+      transform: scale(1);
     }
+
   }
 }
