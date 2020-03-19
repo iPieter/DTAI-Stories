@@ -50,5 +50,5 @@ title = "DTAI Stories"
 
 **Declarative Languages and Artificial Intelligence**
 
-DTAI is the Declarative Languages and Artificial Intelligence research group of the <a href="https://kuleuven.be/" target="_blank">KU Leuven</a> university.
+DTAI is the <a href="https://dtai.cs.kuleuven.be/" target="_blank">Declarative Languages and Artificial Intelligence</a> research group of the <a href="https://kuleuven.be/" target="_blank">KU Leuven</a> university.
 This platform contains short articles about our research.

@@ -4,6 +4,8 @@
 $navbar-height: 50px;
 body {
   margin-top: $navbar-height;
+
+  // Compensate for missing footer
   margin-bottom: 3em;
 }
 
