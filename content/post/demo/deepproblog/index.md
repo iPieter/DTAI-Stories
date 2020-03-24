@@ -1,57 +1,66 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Apost"
-subtitle: "Just a small example post"
+title: "DeepProbLog"
+subtitle: "Neural Probabilistic Logic Programming"
 summary: "This is the summary of the post, which is a featured post"
 authors: ["Demo"]
-tags: ["ProbLog", "Natural Language Processing"]
+tags: ["ProbLog", "Neuro-symbolic"]
 categories: ["ProbLog", "Demo"]
 date: 2019-08-03T10:36:34+02:00
 lastmod: 2019-08-03T10:36:34+02:00
 featured: true
 draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image: 
-  caption: "Post image with caption"
-  focal_point: "Left"
-  preview_only: false
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: ["Example Project"]
+projects: []
 ---
 
-# A post
+# DeepProbLog
 
-This is an example of a post with the Academic theme. We can use **markdown** to write the content and 
+DeepProbLog is a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
 
-add stuff.
+The full paper can be found [here](https://arxiv.org/abs/1907.08194).
 
-### Tables
+The main strengths of DeepProbLog are:
 
-We can easily add tables using markdown syntax and html
+- It combines probabilistic reasoning, logical reasoning and the power of neural networks.
+- It can train neural networks and learn probabilistic paramters from examples.
+- We retain both logic and neural networks as edge cases.
 
-|                   | Accuracy | Precision | Recall | F1    |
-| ----------------- | -------- | --------- | ------ | ----- |
-| L                 | 83,4     | 86,0      | 79,4   | 82,6  |
-| P                 | 84,5     | 85,8      | 82,5   | 84,1  |
-| U                 | 82,3     | 80,3      | 85,4   | 82,8  |
-| L+P<br>P+U<br>U+P | ~87,5    | ~88,5     | ~86,0  | ~87,2 |
-| L+P+U             | 89,1     | 89,6      | 88,3   | 89,0  |
+## What is DeepProbLog?
 
-### Images
+DeepProbLog is an extension of ProbLog that integrates neural networks through the concept of the neural predicate. It allows us to combine high-level logical reasoning with the sub-symbolic power of neural networks.
 
-Markdown allows to add images to your posts like this one
+For example:
+```
+nn(mnist_classifier,[X],Y,[0..9]) :: digit(X,Y).
+```
 
-![another image](featured.png)
+The neural predicate defined above declares that there's a neural network that will take in an input X, and has at its output a probability distribution. This relation can be used in the remainder of the program using the digit relation.
 
-## Tags
+TODO: ADD figure for digit predicate distribution
 
-Below you can find the tags that are specified in the header of the page and the list of related project and posts which is automatically generated.
+We could for example define the addition over two MNIST digits:
+```
+nn(mnist_classifier,[X],Y,[0..9]) :: digit(X,Y).
+addition(X,Y,Z) :- digit(X,N1), digit(Y,N2), Z is N1+N2.
+```
+Where the addition relation now defines the probability distribution over the sum of the individual digits.
+
+TODO: add figure for addition predicate distribution
+
+## Examples
+
+#### MNIST addition
+
+We compared the MNIST addition example describe above with a convolutional neural network baseline.
+The result shows that the inclusion of the logic allows the model to train quicker and achieve a higher accuracy. It's also important to note that the neural network trained inside the DeepProbLog model can recognize single digits, whereas the convolutional baselines can only classify sums. The separation between the logic and neural aspects results in a more flexible model.
+![MNISTS result](mnist.png)
+
+#### Sketching
+
+We reimplemented the experiments from the Differentiable Forth paper. These use a sketching approach to learn the missing behaviour from partial programs using small neural modules.
+
+From the result we can see that we perform similar to the original (neural) model. For learning to sort lists, Differentiable Forth starts to struggle starting from length 4. This is due to the long program trace. DeepProbLog does not have this problem thanks to the fact that it can perform almost all of the program in the logic.
+![Differentiable Forth result](d4.png)
