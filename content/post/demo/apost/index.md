@@ -9,8 +9,8 @@ tags: ["ProbLog", "Natural Language Processing"]
 categories: ["ProbLog", "Demo"]
 date: 2019-08-03T10:36:34+02:00
 lastmod: 2019-08-03T10:36:34+02:00
-featured: true
-draft: false
+featured: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
