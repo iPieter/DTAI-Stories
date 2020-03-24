@@ -4,7 +4,7 @@
 title: "Time Series Clustering"
 subtitle: ""
 summary: ""
-authors: ["wannes"]
+authors: ["wannes", "hendrik"]
 tags: ["time series", "clustering", "Application"]
 categories: ["Anomaly Detection"]
 date: 2020-03-24T16:58:21+01:00
