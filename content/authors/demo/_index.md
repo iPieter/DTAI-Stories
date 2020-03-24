@@ -7,18 +7,18 @@ authors:
 - demo
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: PhD student
 
 # Organizations/Affiliations
 organizations:
-- name: DTAI Lab
+- name: DTAI, KU Leuven
   url: "https://dtai.cs.kuleuven.be/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include probabilistic logic programming, argumentation.
+bio: My research interests include [topics].
 
 interests:
 - Logic Programming
@@ -43,6 +43,10 @@ interests:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+- icon: twitter
+  icon_pack: fab
+  link: https:/twitter.com/thomas_wint
+  
 - icon: google-scholar
   icon_pack: ai
   link: 
@@ -50,10 +54,7 @@ social:
 - icon: github
   icon_pack: fab
   link: 
-
-- icon: bitbucket
-  icon_pack: fab
-  link: 
+  
 - icon: linkedin
   icon_pack: fab
   link:
@@ -70,7 +71,5 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-# - Researchers
-# - Visitors
 - PhD students
 ---
