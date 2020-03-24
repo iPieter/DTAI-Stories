@@ -66,7 +66,8 @@ The COBRAS-TS algorithm is a semi-supervised clustering method that can use indi
 
 An interface is provided to the user that actively asks for feedback about time series where the method is the most unsure about how to cluster them.
 
-![gui](img3.png)
+![gui](cobras_schema.png)
+![gui](cobras_example.png)
 
 The toolbox is available at https://dtai.cs.kuleuven.be/software/cobras/ .
 
