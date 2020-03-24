@@ -46,3 +46,12 @@ body {
   }
 }
 
+// Don't pop icons
+
+.network-icon li:hover {
+  transform: scale(1);
+  i {
+    color: #666 !important;
+  }
+}
+
