@@ -5,6 +5,7 @@ $navbar-height: 50px;
 .navbar {
   height: $navbar-height;
 }
+
 body {
   margin-top: $navbar-height;
 
@@ -18,12 +19,15 @@ body {
     .hero-title {
       padding-bottom: 1rem;
     }
+
     .hero-lead p {
       padding-bottom: 1rem;
     }
+
     padding: 5em 0 6em 0;
 
   }
+
   padding: 4em 0 4em 0;
 }
 
@@ -39,6 +43,7 @@ body {
 .tag-cloud {
   a {
     color: #166a84;
+
     &:hover, &:focus {
       transform: scale(1);
     }
@@ -55,6 +60,7 @@ body {
 
 .network-icon li:hover {
   transform: scale(1);
+
   i {
     color: #666 !important;
   }
@@ -65,4 +71,8 @@ body {
   .bio {
     color: #777;
   }
+}
+
+section {
+  overflow: hidden;
 }
