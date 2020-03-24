@@ -9,7 +9,7 @@ primary = "#1D8DB0"
 
 # Menu
 # menu_primary = "#1D8DB0"
-menu_primary = "#000"
+menu_primary = "#333"
 menu_text = "#DDD"
 menu_text_active = "#FFFFFF"
 menu_title = "#FFFFFF"
