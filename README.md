@@ -1,6 +1,36 @@
-<p align="center"><a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener"><img src="https://sourcethemes.com/academic/img/logo_200px.png" alt="Academic logo"></a></p>
+# ML instructions: How to add new content
+## 1. Fork the repository
+Create a copy of the website repository by forking the repository to your own GitHub
 
-# Academic Kickstart: The Template for [Academic Website Builder](https://sourcethemes.com/academic/)
+## 2. Create a new article
+1. Install Hugo
+2. Run the following command, replacing "name_of_the_author" with your name and "name_of_the_post" with the post title
+
+   `hugo new --kind post post/name_of_the_author/name_of_the_post`
+   
+   This will create the new page with the current date already filled
+3. Go to `content/posts/name_of_the_author/name_of_the_post`
+4. Edit the index.md with your post, written in Mark down
+
+## 3. Add yourself as an author
+If you're writing your first article, you should probably also make a nice author page for yourself.
+
+1. Go to the `content/authors` folder
+2. Copy the `demo` folder
+3. Rename the folder to your name and lastname, separated with a dash, e.g. `luc-deraedt` (do not an underscore)
+4. Update the `_index.md` file with your personal information
+
+## 4. Send a pull request
+Now go back to the main repository, and send a pull request from your forked repository.
+One of the website admins will then pull your article in, and rebuild the website.
+
+Thanks for posting about your research!
+
+Website structure
+
+
+
+# Website template information
 
 [**Academic**](https://github.com/gcushen/hugo-academic) makes it easy to create a beautiful website for free using Markdown, Jupyter, or RStudio. Customize anything on your site with widgets, themes, and language packs. [Check out the latest demo](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the showcase](https://sourcethemes.com/academic/#expo).
 
@@ -8,29 +38,6 @@
 
 - 👉 [**Get Started**](#install)
 - 📚 [View the **documentation**](https://sourcethemes.com/academic/docs/)
-- 💬 [Chat with the **Academic community**](https://spectrum.chat/academic) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@source_themes](https://twitter.com/source_themes) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithAcademic](https://twitter.com/search?q=%23MadeWithAcademic&src=typd)
-- 💡 [Request a **feature** or report a **bug**](https://github.com/gcushen/hugo-academic/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- :heart: **Support development** of Academic:
-  - ☕️ [**Donate a coffee**](https://paypal.me/cushen)
-  - 💵 [Become a backer on **Patreon**](https://www.patreon.com/cushen)
-  - 🖼️ [Decorate your laptop or journal with an Academic **sticker**](https://www.redbubble.com/people/neutreno/works/34387919-academic)
-  - 👕 [Wear the **T-shirt**](https://academic.threadless.com/)
-  - :woman_technologist: [**Contribute**](https://sourcethemes.com/academic/docs/contribute/)
-
-[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
-
-## Install
-
-You can choose from one of the following four methods to install:
-
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-
-Then [personalize your new site](https://sourcethemes.com/academic/docs/get-started/).
 
 ## Ecosystem
 
