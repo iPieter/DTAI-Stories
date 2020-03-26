@@ -10,7 +10,7 @@ categories: ["Demo"]
 date: 2019-09-03T11:10:01+02:00
 lastmod: 2019-09-03T11:10:01+02:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

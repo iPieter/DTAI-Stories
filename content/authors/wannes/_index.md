@@ -1,30 +1,29 @@
 ---
 # Display name
-name: Demo
+name: Wannes Meert
 
 # Username (this should match the folder name)
 authors:
-- demo
+- wannes
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PhD student
+role: Research Manager
 
 # Organizations/Affiliations
 organizations:
-- name: DTAI, KU Leuven
+- name: DTAI Lab
   url: "https://dtai.cs.kuleuven.be/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include [topics].
+bio: Application of Artificial Intelligence and Machine Learning.
 
 interests:
-- Logic Programming
-- Statistical Relational Learning
-- Lifted Inference
-- Deep Learning
+- Anomaly Detection
+- Statistical Relational AI
+- ...
 
 # education:
 #   courses:
@@ -43,21 +42,21 @@ interests:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: twitter
-  icon_pack: fab
-  link: https:/twitter.com/thomas_wint
-  
 - icon: google-scholar
   icon_pack: ai
-  link: 
+  link: https://scholar.google.com/citations?user=Q-saBpcAAAAJ&hl=en
 
 - icon: github
   icon_pack: fab
-  link: 
-  
+  link: https://github.com/wannesm
+
+- icon: bitbucket
+  icon_pack: fab
+  link: https://bitbucket.org/wannesm/
+
 - icon: linkedin
   icon_pack: fab
-  link:
+  link: https://www.linkedin.com/in/wannesmeert/
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
@@ -71,5 +70,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- PhD students
+- Researchers
+# - Visitors
+# - PhD students
 ---

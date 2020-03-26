@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Demo
+name: Thomas Winters
 
 # Username (this should match the folder name)
 authors:
-- demo
+- thomas-winters
 
 # Is this the primary user of the site?
 superuser: false
@@ -18,25 +18,25 @@ organizations:
   url: "https://dtai.cs.kuleuven.be/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include [topics].
+bio: Researching computational creativity systems using symbolic AI methodologies.
 
 interests:
-- Logic Programming
-- Statistical Relational Learning
-- Lifted Inference
-- Deep Learning
+- Commputational Creativity
+- Computational Humor
+- Language Models
+- Probabilistic methods
 
-# education:
-#   courses:
-#   - course: PhD in Artificial Intelligence
-#     institution: Stanford University
-#     year: 2012
-#   - course: MEng in Artificial Intelligence
-#     institution: Massachusetts Institute of Technology
-#     year: 2009
-#   - course: BSc in Artificial Intelligence
-#     institution: Massachusetts Institute of Technology
-#     year: 2008
+education:
+   courses:
+   - course: Advanced Masters in Artificial Intelligence
+     institution: KU Leuven
+     year: 2018
+   - course: MEng in Computer Science
+     institution: KU Leuven
+     year: 2017
+   - course: BSc in Informatics
+     institution: KU Leuven
+     year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -49,16 +49,20 @@ social:
   
 - icon: google-scholar
   icon_pack: ai
-  link: 
+  link: https://scholar.google.com/citations?user=lHfPiwoAAAAJ
 
 - icon: github
   icon_pack: fab
-  link: 
-  
+  link: https://github.com/twinters
+
 - icon: linkedin
   icon_pack: fab
-  link:
+  link: https://www.linkedin.com/in/thomas-winters/
 
+- icon: link
+  icon_pack: fas
+  link: http://thomaswinters.be
+  
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -72,4 +76,5 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - PhD students
+- Luc De Raedt group
 ---
