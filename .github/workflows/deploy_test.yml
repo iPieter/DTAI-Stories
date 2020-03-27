@@ -1,0 +1,35 @@
+name: Build hugo website
+
+env:
+    OUTPUT_PATH: ${{ github.workspace }}/public
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1  # v2 does not have submodules option now
+        
+      - name: Get Hugo Version
+        id: hugo-version
+        run: |
+            HUGO_VERSION=$(./hugo version | sed -r 's/^.*v([0-9]*\.[0-9]*\.[0-9]*).*/\1/')
+            echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.3.0
+        with:
+            hugo-version: "${{ steps.hugo-version.outputs.HUGO_VERSION }}"
+            extended: true
+
+      - name: Build
+        run: hugo --minify --source ./ --destination ${{ env.OUTPUT_PATH }}
+    
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: test_deployed
+          publish_dir: /public
