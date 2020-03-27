@@ -1,12 +1,11 @@
 name: Build hugo website
 
 env:
-    OUTPUT_PATH: ${{ github.workspace }}/.public
+    OUTPUT_PATH: ${{ github.workspace }}/public
 on:
   push:
     branches:
       - master
-      - test
 
 jobs:
   build-deploy:
@@ -23,6 +22,14 @@ jobs:
         uses: peaceiris/actions-hugo@v2.3.0
         with:
             hugo-version: "${{ steps.hugo-version.outputs.HUGO_VERSION }}"
+            extended: true
 
       - name: Build
         run: hugo --minify --source ./ --destination ${{ env.OUTPUT_PATH }}
+    
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master_deployed
+          publish_dir: /public
