@@ -26,7 +26,8 @@ In the context of clustering time series, the subjectiveness of clustering is ev
 &lt;a href="https://github.com/Vincent-Vercruyssen/anomatools" target="_blank" rel="noopener">Anomatools toolbox&lt;/a>.&lt;/p>
 &lt;h2 id="including-flexible-user-feedback">Including flexible user-feedback&lt;/h2>
 &lt;h3 id="semi-supervised-learning">Semi-supervised learning&lt;/h3>
-&lt;p>In this paper, we propose a novel constrained-clustering-based approach for anomaly detection that works in both an unsupervised and semi-supervised setting. Starting from an unlabeled data set, the approach is able to gradually incorporate expert-provided feedback to improve its performance. We evaluated our approach on real-world water monitoring time series data from supermarkets in collaboration with Colruyt Group, one of Belgiums largest retail companies. Empirically, we found that our approach outperforms the current detection system as well as several other baselines. Our system is currently deployed and used by the company to analyze water usage for 20 stores on a daily basis.&lt;/p>
+&lt;p>Sometimes there is some information available. For example, some labels might be known or the user can answer a few question.
+An approach used in our research is a constrained-clustering-based approach for anomaly detection that works in both an unsupervised and semi-supervised setting. Starting from an unlabeled data set, the approach is able to gradually incorporate expert-provided feedback to improve its performance.&lt;/p>
 &lt;p>&lt;img src="featured.png" alt="another image">&lt;/p>
 &lt;p>References:&lt;/p>
 &lt;ul>
