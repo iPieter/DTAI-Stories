@@ -20,11 +20,8 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include [topics].
 
-interests:
-- Logic Programming
-- Statistical Relational Learning
-- Lifted Inference
-- Deep Learning
+Interests:
+- Machine Learning
 
 # education:
 #   courses:
