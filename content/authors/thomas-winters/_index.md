@@ -21,7 +21,7 @@ organizations:
 bio: Researching computational creativity systems using symbolic AI methodologies.
 
 interests:
-- Commputational Creativity
+- Computational Creativity
 - Computational Humor
 - Language Models
 - Probabilistic methods
