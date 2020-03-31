@@ -1,4 +1,7 @@
 # ML instructions: How to add new content
+
+You can view the website on [https://dtai.cs.kuleuven.be/stories](https://dtai.cs.kuleuven.be/stories/)
+
 ## 1. Fork the repository
 Create a copy of the website repository by forking the repository to your own GitHub
 
