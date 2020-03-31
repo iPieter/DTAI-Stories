@@ -3,24 +3,43 @@
 
 title: "DeepProbLog"
 subtitle: "Neural Probabilistic Logic Programming"
-summary: "This is the summary of the post, which is a featured post"
-authors: ["Demo"]
+summary: "This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks."
+authors: ["Robin Manhaeve"]
 tags: ["ProbLog", "Neuro-symbolic"]
-categories: ["ProbLog", "Demo"]
-date: 2019-08-03T10:36:34+02:00
-lastmod: 2019-08-03T10:36:34+02:00
-featured: true
+categories: ["ProbLog", "Neuro-symbolic"]
+date: 2020-03-31T10:36:34+02:00
+lastmod: 2020-03-31T10:36:34+02:00
+featured: false
 draft: false
-
-
+image:
+  preview_only: false
 projects: []
 ---
 
 # DeepProbLog
 
-DeepProbLog is a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
-
+This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
 The full paper can be found [here](https://arxiv.org/abs/1907.08194).
+
+
+
+## What is DeepProbLog?
+
+DeepProbLog is an extension of ProbLog that integrates neural networks through the concept of the neural predicate. It allows us to combine high-level logical reasoning with the sub-symbolic power of neural networks.
+
+![](dpl.svg)
+
+Let's say we want to solve the following problem. We get two handwritten digits (MNIST) and have to determine its sum, e.g. <img src="addition.png" width="256">
+
+This task can be easily handled in DeepProbLog:
+
+```
+nn(mnist_classifier,[X],Y,[0..9]) :: digit(X,Y).
+addition(X,Y,Z) :- digit(X,N1), digit(Y,N2), Z is N1+N2.
+```	
+Where the first line is a *neural predicate* that includes a neural network as a predicate inside of the logical program. This neural network can be trained.
+The addition predicate defines the sum of the individual digits. We can now train this DeepProbLog model and all of the neural networks inside of it using examples of additions. It's important to note that the neural networks will, thanks to the logic, learn to recognize individual digits.
+
 
 The main strengths of DeepProbLog are:
 
@@ -28,29 +47,10 @@ The main strengths of DeepProbLog are:
 - It can train neural networks and learn probabilistic paramters from examples.
 - We retain both logic and neural networks as edge cases.
 
-## What is DeepProbLog?
 
-DeepProbLog is an extension of ProbLog that integrates neural networks through the concept of the neural predicate. It allows us to combine high-level logical reasoning with the sub-symbolic power of neural networks.
+![](pipeline.png)
 
-For example:
-```
-nn(mnist_classifier,[X],Y,[0..9]) :: digit(X,Y).
-```
-
-The neural predicate defined above declares that there's a neural network that will take in an input X, and has at its output a probability distribution. This relation can be used in the remainder of the program using the digit relation.
-
-TODO: ADD figure for digit predicate distribution
-
-We could for example define the addition over two MNIST digits:
-```
-nn(mnist_classifier,[X],Y,[0..9]) :: digit(X,Y).
-addition(X,Y,Z) :- digit(X,N1), digit(Y,N2), Z is N1+N2.
-```
-Where the addition relation now defines the probability distribution over the sum of the individual digits.
-
-TODO: add figure for addition predicate distribution
-
-## Examples
+## Results
 
 #### MNIST addition
 
