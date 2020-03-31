@@ -38,7 +38,8 @@ The methods presented in this article are implemented as part of the [Anomatools
 
 ### Semi-supervised learning
 
-In this paper, we propose a novel constrained-clustering-based approach for anomaly detection that works in both an unsupervised and semi-supervised setting. Starting from an unlabeled data set, the approach is able to gradually incorporate expert-provided feedback to improve its performance. We evaluated our approach on real-world water monitoring time series data from supermarkets in collaboration with Colruyt Group, one of Belgiums largest retail companies. Empirically, we found that our approach outperforms the current detection system as well as several other baselines. Our system is currently deployed and used by the company to analyze water usage for 20 stores on a daily basis.
+Sometimes there is some information available. For example, some labels might be known or the user can answer a few question.
+An approach used in our research is a constrained-clustering-based approach for anomaly detection that works in both an unsupervised and semi-supervised setting. Starting from an unlabeled data set, the approach is able to gradually incorporate expert-provided feedback to improve its performance. 
 
 ![another image](featured.png)
 

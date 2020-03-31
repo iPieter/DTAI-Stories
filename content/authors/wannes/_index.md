@@ -18,11 +18,15 @@ organizations:
   url: "https://dtai.cs.kuleuven.be/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Application of Artificial Intelligence and Machine Learning.
+bio: Applications of Artificial Intelligence and Machine Learning.
 
 interests:
 - Anomaly Detection
 - Statistical Relational AI
+- Probabilistic Models
+- Probabilistic Programming
+- Semi-supervised learning
+- Hardware for ML
 - ...
 
 # education:
@@ -58,6 +62,10 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/in/wannesmeert/
 
+- icon: link
+  icon_pack: fas
+  link: http://people.cs.kuleuven.be/wannes.meert
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -71,6 +79,7 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - Researchers
+- Luc De Raedt group
 # - Visitors
 # - PhD students
 ---
