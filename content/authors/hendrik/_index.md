@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Wannes Meert
+name: Hendrik Blockeel
 
 # Username (this should match the folder name)
 authors:
-- wannes
+- hendrik
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Research Manager
+role: Full professor
 
 # Organizations/Affiliations
 organizations:
@@ -22,16 +22,13 @@ organizations:
   url: "https://ai.kuleuven.be"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Applications of Artificial Intelligence and Machine Learning.
+bio: Theory and algorithms for machine learning and data mining in general.
 
 interests:
-- Anomaly Detection
-- Statistical Relational AI
-- Probabilistic Models
-- Probabilistic Programming
-- Semi-supervised learning
-- Hardware for ML
-- ...
+- relational learning
+- graph mining
+- probabilistic logics
+- inductive knowledge bases
 
 # education:
 #   courses:
@@ -52,23 +49,15 @@ interests:
 social:
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.com/citations?user=Q-saBpcAAAAJ&hl=en
-
-- icon: github
-  icon_pack: fab
-  link: https://github.com/wannesm
-
-- icon: bitbucket
-  icon_pack: fab
-  link: https://bitbucket.org/wannesm/
+  link: https://scholar.google.be/citations?user=Eq5sUNpp0gwC&hl=en&oi=ao
 
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/wannesmeert/
+  link: https://www.linkedin.com/in/hendrik-blockeel-3877471/
 
 - icon: link
   icon_pack: fas
-  link: http://people.cs.kuleuven.be/wannes.meert
+  link: https://people.cs.kuleuven.be/~hendrik.blockeel/
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
@@ -83,7 +72,7 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - Researchers
-- Luc De Raedt group
+- Hendrik Blockeel group
 # - Visitors
 # - PhD students
 ---
