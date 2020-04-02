@@ -4,7 +4,7 @@
 title: "Anomaly Detection with User Feedback"
 subtitle: "Learn about context from data and user knowledge"
 summary: "This is the summary of the post, which is a featured post"
-authors: ["wannes", "vincentv", "jdavis"]
+authors: ["wannes", "vincent-vercruyssen", "jesse-davis"]
 tags: ["Anomaly Detection", "Semi-supervised learning", "Outlier detection", "Active learning", "Flexible supervision", "Application"]
 categories: ["Anomaly Detection", "Engineering and Sensors"]
 date: 2020-03-24T10:36:34+02:00
