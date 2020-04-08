@@ -23,10 +23,12 @@ organizations:
   url: "https://ai.kuleuven.be"
 
 # Short bio (displayed in user profile at end of posts)
-bio: ...
+bio: I develop machine learning models that fully automatically detect behaviour in large datasets. My interests span machine learning, data mining, and practical applications thereof.
 
 interests:
 - Anomaly Detection
+- Transfer Learning
+- Active learning
 
 # education:
 #   courses:
@@ -47,19 +49,19 @@ interests:
 social:
 - icon: google-scholar
   icon_pack: ai
-  link: 
+  link: https://scholar.google.be/citations?user=6hNLTrAAAAAJ&hl=en&oi=ao
 
 - icon: github
   icon_pack: fab
-  link: 
+  link: https://github.com/Vincent-Vercruyssen
 
 - icon: linkedin
   icon_pack: fab
-  link: 
+  link: https://www.linkedin.com/in/vincent-vercruyssen-b2734192/?locale=en_US
 
 - icon: link
   icon_pack: fas
-  link: 
+  link: https://people.cs.kuleuven.be/~vincent.vercruyssen/
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
@@ -68,7 +70,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "vincent.vercruyssen@kuleuven.be"
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
