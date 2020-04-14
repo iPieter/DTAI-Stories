@@ -16,8 +16,6 @@ image:
 projects: []
 ---
 
-# DeepProbLog
-
 This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
 The full paper can be found [here](https://arxiv.org/abs/1907.08194).
 
