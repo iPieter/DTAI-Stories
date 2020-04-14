@@ -10,7 +10,7 @@ body {
   margin-top: $navbar-height;
 
   // Compensate for missing footer
-  margin-bottom: 3em;
+  //margin-bottom: 1em;
 }
 
 // Decrease padding of sections
@@ -75,4 +75,20 @@ body {
 
 section {
   overflow: hidden;
+}
+
+footer {
+  margin: 1rem 0 0;
+  padding: 1rem 0;
+  width: 100%;
+
+  img {
+    max-width: 100px;
+    width: 100px;
+  }
+  @media (min-width: 768px) {
+    img {
+      max-width: 128px;
+      width: 128px;
+    } }
 }
