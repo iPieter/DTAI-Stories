@@ -6,7 +6,7 @@ subtitle: "Neural Probabilistic Logic Programming"
 summary: "This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks."
 authors: ["Robin Manhaeve"]
 tags: ["ProbLog", "Neuro-symbolic"]
-categories: ["Probabilistic Programming and Statistical Relatiobal Learning"]
+categories: ["Probabilistic Programming and Statistical Relational Learning"]
 date: 2020-03-31T10:36:34+02:00
 lastmod: 2020-03-31T10:36:34+02:00
 featured: false
