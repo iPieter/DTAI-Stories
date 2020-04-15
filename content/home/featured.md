@@ -5,10 +5,10 @@
 
 widget = "featured"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
-weight = 80  # Order that this section will appear.
+active = true  # Activate this widget? true/false
+weight = 20  # Order that this section will appear.
 
-title = "Featured Publications"
+title = "Highlights"
 subtitle = ""
 
 # Link to exhaustive DTAI list
@@ -16,7 +16,7 @@ exhaustive = "http://www.cs.kuleuven.be/publicaties/lirias/TEST2/dtaipub.php"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "publication"
+  page_type = "post"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 0
