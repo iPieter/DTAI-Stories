@@ -3,7 +3,7 @@
 
 title: "Anomaly Detection with User Feedback"
 subtitle: "Learning context-aware anomaly detection models"
-summary: "Adding contextual information to anomaly detection models."
+summary: "An overview of DTAI research on how to handle user feedback for contextual anomaly detection."
 authors: ["wannes", "vincent-vercruyssen", "jesse-davis"]
 tags: ["Anomaly Detection", "Semi-supervised learning", "Outlier detection", "Active learning", "Flexible supervision", "Application"]
 categories: ["Anomaly Detection", "Engineering and Sensors"]
@@ -27,6 +27,22 @@ image:
 #   Otherwise, set `projects = []`.
 projects: ["Example Project"]
 ---
+
+<div class="card">
+  <div class="card-body">
+<p>
+<small>
+This post is based on the following publications:
+</p>
+<ul>
+<li> <a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf">Semi-supervised Anomaly Detection with an Application to Water Analytics</a>. Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 2018.
+<li> <a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection</a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
+<li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
+</ul>
+</small>
+  </div>
+</div>
+
 
 Anomaly detection deals with situations where mostly *normal* behaviour is observed and one is interested in detecting deviations from this normal behaviour. Examples of *abnormal* behaviour, the *anomalies*, are often not available because they are expensive to gather (e.g., breaking a machine) or they are not yet known (e.g., adversarial behaviour). Anomaly detection models typically learn what normal behaviour is based on the distribution of the data and a small number of labels proved by an expert (i.e., information about whether the observed behaviour is *normal* or *abnormal*).
 
