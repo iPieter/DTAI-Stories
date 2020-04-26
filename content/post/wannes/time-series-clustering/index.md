@@ -29,6 +29,13 @@ projects: []
 ---
 
 
+{{< relpub >}}
+This post is based on the following publications:
+
+- [COBRAS-TS: A new approach to Semi-Supervised Clustering of Time Series](https://dtai.cs.kuleuven.be/software/cobras/cobras_ts_cameraready.pdf). Van Craenendonck, T., Meert, W., Dumancic, S. & Blockeel, H. Discovery Science, 2018.
+
+{{< /relpub >}}
+
 Clustering is one of the most widely used techniques for time series because it allows to identify and summarize patterns that are of interest (e.g., frequent or anomalous patterns). Furthermore, it does not rely on costly human supervision of time-consuming labeling.
 As a result, time series clustering has been studied for many different applications such as astronomy, biology, meteorology, medicine, finance, robotics, engineering, etc..
 
@@ -37,11 +44,11 @@ As a result, time series clustering has been studied for many different applicat
 Time series clustering is heavily dependent on the choice of the distance used to compare two series. Typically, one is interested in similarity between shapes represented by a series, irrespective of phase or amplitude. And while many distance measures have been proposed, it has been shown that distance measures that can deal with invariances to amplitude and phase perform particularly well.
 One of the best performing similarity measures is Dynamic Time Warping (DTW).
 
-![DTW Warpring](dtw_warp.png)
+{{< figure src="dtw_warp.png" title="Dynamic Time Distance: Warping between two series" >}}
 
 The resulting clustering is robust against small changes between time series. As can be seen in the figure underneath, DTW allows a clustering that nicely groups similar series.
 
-![DTW clustering](dtw_clustering.png)
+{{< figure src="dtw_clustering.png" title="Time series clustering with DTW" >}}
 
 
 The toolbox is available at https://github.com/wannesm/dtaidistance/ .
@@ -55,18 +62,19 @@ Semi-supervised clustering methods deal with this subjectiveness in a differ- en
 aim to limit the number of queries that is required to obtain a good clustering by selecting informative pairs to query.
 In the context of clustering time series, the subjectiveness of clustering is even more prominent. In some contexts, the time scale matters, in other contexts it does not. Similarly, the scale of the amplitude may (not) matter. One may want to cluster time series based on certain types of qualitative behavior (monotonic, periodic, ...), local patterns that occur in them, etc. Despite this variability, and although there is a plethora of work on time series clustering, semi-supervised clustering of time series has only very recently started receiving attention.
 
-![cobras](cobras_logo.png)
+{{< figure src="cobras_logo.png" width="200px" >}}
 
 Clustering is ubiquitous in data analysis, including analysis of time series. But it is inherently subjective: different users may prefer different clusterings for a particular dataset. Semi-supervised clustering addresses this by allowing the user to provide examples of instances that should (not) be in the same cluster. 
 
 The COBRAS-TS algorithm is a semi-supervised clustering method that can use indirect feedback from users. It clusters with the user in the loop. The user can provide indirect feedback where it is only required to tell the system for a few time series whether two time series represent the same behavior or not. As a result the COBRAS-TS system can identify clusters that are characterized by small local patterns.
 
-![img1](img1.png)
-![img2](img2.png)
+{{< figure src="img1.png" width="400px" alt="Disconnected modes in a cluster" >}}
+{{< figure src="img2.png" width="400px" alt="Comparison" >}}
 
 An interface is provided to the user that actively asks for feedback about time series where the method is the most unsure about how to cluster them.
 
-![gui](cobras_schema.png)
+{{< figure src="cobras_schema.png" width="400px" alt="GUI" >}}
+
 ![gui](cobras_example.png)
 
 The toolbox is available at https://dtai.cs.kuleuven.be/software/cobras/ .
