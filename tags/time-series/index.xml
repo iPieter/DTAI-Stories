@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>time series | DTAI</title><link>https://dtai.cs.kuleuven.be/stories/tags/time-series/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/tags/time-series/index.xml" rel="self" type="application/rss+xml"/><description>time series</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 16:58:21 +0100</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>time series</title><link>https://dtai.cs.kuleuven.be/stories/tags/time-series/</link></image><item><title>Time Series Clustering</title><link>https://dtai.cs.kuleuven.be/stories/post/wannes/time-series-clustering/</link><pubDate>Tue, 24 Mar 2020 16:58:21 +0100</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/wannes/time-series-clustering/</guid><description>
-&lt;div class="card">
-&lt;div class="card-body relpub">
+&lt;div class="card relpub">
+&lt;div class="card-body">
 &lt;small>
 &lt;p>This post is based on the following publications:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://dtai.cs.kuleuven.be/software/cobras/cobras_ts_cameraready.pdf">COBRAS-TS: A new approach to Semi-Supervised Clustering of Time Series&lt;/a>. Van Craenendonck, T., Meert, W., Dumancic, S. &amp;amp; Blockeel, H. Discovery Science, 2018.&lt;/li>
+&lt;/ul>
+&lt;p>Software is available in the following toolboxes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">COBRAS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/wannesm/dtaidistance/">DTAIDistance&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/small>
 &lt;/div>
@@ -62,5 +67,9 @@ In the context of clustering time series, the subjectiveness of clustering is ev
 &lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="400px" height="218">
 &lt;/a>
 &lt;/figure>
-&lt;p>&lt;img src="cobras_example.png" alt="gui">&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_example_hu4e6b9924bf96602c22d2e8c89b3568aa_221661_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_example_hu4e6b9924bf96602c22d2e8c89b3568aa_221661_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="100%" height="549">
+&lt;/a>
+&lt;/figure>
 &lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item></channel></rss>
