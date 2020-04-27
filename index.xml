@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DTAI</title><link>https://dtai.cs.kuleuven.be/posts/</link><atom:link href="https://dtai.cs.kuleuven.be/posts/index.xml" rel="self" type="application/rss+xml"/><description>DTAI</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 10:36:34 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>DTAI</title><link>https://dtai.cs.kuleuven.be/posts/</link></image><item><title>DeepProbLog</title><link>https://dtai.cs.kuleuven.be/posts/post/robin-manhaeve/deepproblog/</link><pubDate>Tue, 31 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/posts/post/robin-manhaeve/deepproblog/</guid><description>&lt;p>This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DTAI</title><link>https://dtai.cs.kuleuven.be/stories/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/index.xml" rel="self" type="application/rss+xml"/><description>DTAI</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 10:36:34 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>DTAI</title><link>https://dtai.cs.kuleuven.be/stories/</link></image><item><title>DeepProbLog</title><link>https://dtai.cs.kuleuven.be/stories/post/robin-manhaeve/deepproblog/</link><pubDate>Tue, 31 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/robin-manhaeve/deepproblog/</guid><description>&lt;p>This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
 The full paper can be found
 &lt;a href="https://arxiv.org/abs/1907.08194" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;h2 id="what-is-deepproblog">What is DeepProbLog?&lt;/h2>
@@ -26,7 +26,7 @@ The result shows that the inclusion of the logic allows the model to train quick
 &lt;h4 id="sketching">Sketching&lt;/h4>
 &lt;p>We reimplemented the experiments from the Differentiable Forth paper. These use a sketching approach to learn the missing behaviour from partial programs using small neural modules.&lt;/p>
 &lt;p>From the result we can see that we perform similar to the original (neural) model. For learning to sort lists, Differentiable Forth starts to struggle starting from length 4. This is due to the long program trace. DeepProbLog does not have this problem thanks to the fact that it can perform almost all of the program in the logic.
-&lt;img src="d4.png" alt="Differentiable Forth result">&lt;/p></description></item><item><title>Time Series Clustering</title><link>https://dtai.cs.kuleuven.be/posts/post/wannes/time-series-clustering/</link><pubDate>Tue, 24 Mar 2020 16:58:21 +0100</pubDate><guid>https://dtai.cs.kuleuven.be/posts/post/wannes/time-series-clustering/</guid><description>
+&lt;img src="d4.png" alt="Differentiable Forth result">&lt;/p></description></item><item><title>Time Series Clustering</title><link>https://dtai.cs.kuleuven.be/stories/post/wannes/time-series-clustering/</link><pubDate>Tue, 24 Mar 2020 16:58:21 +0100</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/wannes/time-series-clustering/</guid><description>
 &lt;div class="card">
 &lt;div class="card-body relpub">
 &lt;small>
@@ -43,8 +43,8 @@ As a result, time series clustering has been studied for many different applicat
 &lt;p>Time series clustering is heavily dependent on the choice of the distance used to compare two series. Typically, one is interested in similarity between shapes represented by a series, irrespective of phase or amplitude. And while many distance measures have been proposed, it has been shown that distance measures that can deal with invariances to amplitude and phase perform particularly well.
 One of the best performing similarity measures is Dynamic Time Warping (DTW).&lt;/p>
 &lt;figure id="figure-dynamic-time-distance-warping-between-two-series">
-&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/dtw_warp_hu56a5075f5e012b20bb536436aa071195_51331_2000x2000_fit_lanczos_2.png" data-caption="Dynamic Time Distance: Warping between two series">
-&lt;img data-src="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/dtw_warp_hu56a5075f5e012b20bb536436aa071195_51331_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="400" height="290">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_warp_hu56a5075f5e012b20bb536436aa071195_51331_2000x2000_fit_lanczos_2.png" data-caption="Dynamic Time Distance: Warping between two series">
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_warp_hu56a5075f5e012b20bb536436aa071195_51331_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="400" height="290">
 &lt;/a>
 &lt;figcaption>
 Dynamic Time Distance: Warping between two series
@@ -52,8 +52,8 @@ Dynamic Time Distance: Warping between two series
 &lt;/figure>
 &lt;p>The resulting clustering is robust against small changes between time series. As can be seen in the figure underneath, DTW allows a clustering that nicely groups similar series.&lt;/p>
 &lt;figure id="figure-time-series-clustering-with-dtw">
-&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/dtw_clustering_hu1e289b70cecb573da4502978abb095f3_170841_2000x2000_fit_lanczos_2.png" data-caption="Time series clustering with DTW">
-&lt;img data-src="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/dtw_clustering_hu1e289b70cecb573da4502978abb095f3_170841_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="620" height="600">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_clustering_hu1e289b70cecb573da4502978abb095f3_170841_2000x2000_fit_lanczos_2.png" data-caption="Time series clustering with DTW">
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_clustering_hu1e289b70cecb573da4502978abb095f3_170841_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="620" height="600">
 &lt;/a>
 &lt;figcaption>
 Time series clustering with DTW
@@ -66,32 +66,32 @@ Semi-supervised clustering methods deal with this subjectiveness in a differ- en
 aim to limit the number of queries that is required to obtain a good clustering by selecting informative pairs to query.
 In the context of clustering time series, the subjectiveness of clustering is even more prominent. In some contexts, the time scale matters, in other contexts it does not. Similarly, the scale of the amplitude may (not) matter. One may want to cluster time series based on certain types of qualitative behavior (monotonic, periodic, &amp;hellip;), local patterns that occur in them, etc. Despite this variability, and although there is a plethora of work on time series clustering, semi-supervised clustering of time series has only very recently started receiving attention.&lt;/p>
 &lt;figure >
-&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/cobras_logo_hu27e11e8a0168bda589412849cb53f1c4_22373_2000x2000_fit_lanczos_2.png" >
-&lt;img data-src="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/cobras_logo_hu27e11e8a0168bda589412849cb53f1c4_22373_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="200px" height="350">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_logo_hu27e11e8a0168bda589412849cb53f1c4_22373_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_logo_hu27e11e8a0168bda589412849cb53f1c4_22373_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="200px" height="350">
 &lt;/a>
 &lt;/figure>
 &lt;p>Clustering is ubiquitous in data analysis, including analysis of time series. But it is inherently subjective: different users may prefer different clusterings for a particular dataset. Semi-supervised clustering addresses this by allowing the user to provide examples of instances that should (not) be in the same cluster.&lt;/p>
 &lt;p>The COBRAS-TS algorithm is a semi-supervised clustering method that can use indirect feedback from users. It clusters with the user in the loop. The user can provide indirect feedback where it is only required to tell the system for a few time series whether two time series represent the same behavior or not. As a result the COBRAS-TS system can identify clusters that are characterized by small local patterns.&lt;/p>
 &lt;p>
 &lt;figure >
-&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/img1_hu4ae0b56b08877aad3dec303e3d3906a2_202965_2000x2000_fit_lanczos_2.png" >
-&lt;img data-src="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/img1_hu4ae0b56b08877aad3dec303e3d3906a2_202965_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Disconnected modes in a cluster" width="400px" height="373">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img1_hu4ae0b56b08877aad3dec303e3d3906a2_202965_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img1_hu4ae0b56b08877aad3dec303e3d3906a2_202965_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Disconnected modes in a cluster" width="400px" height="373">
 &lt;/a>
 &lt;/figure>
 &lt;figure >
-&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/img2_hu3fa8e371462bfbb27ad46e311cd1fe6e_45246_2000x2000_fit_lanczos_2.png" >
-&lt;img data-src="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/img2_hu3fa8e371462bfbb27ad46e311cd1fe6e_45246_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Comparison" width="400px" height="155">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img2_hu3fa8e371462bfbb27ad46e311cd1fe6e_45246_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img2_hu3fa8e371462bfbb27ad46e311cd1fe6e_45246_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Comparison" width="400px" height="155">
 &lt;/a>
 &lt;/figure>
 &lt;/p>
 &lt;p>An interface is provided to the user that actively asks for feedback about time series where the method is the most unsure about how to cluster them.&lt;/p>
 &lt;figure >
-&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" >
-&lt;img data-src="https://dtai.cs.kuleuven.be/posts/posts/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="400px" height="218">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="400px" height="218">
 &lt;/a>
 &lt;/figure>
 &lt;p>&lt;img src="cobras_example.png" alt="gui">&lt;/p>
-&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/posts/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/posts/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>&lt;div class="card">
+&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>&lt;div class="card">
 &lt;div class="card-body">
 &lt;p>
 &lt;small>
@@ -148,7 +148,7 @@ An approach used in our research is a constrained-clustering-based approach for 
 &lt;h4 id="references-2">References&lt;/h4>
 &lt;ul>
 &lt;li>&amp;ldquo;Now you see it, now you don&amp;rsquo;t!&amp;rdquo; Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 7 May 2020.&lt;/li>
-&lt;/ul></description></item><item><title>Can computers create jokes?</title><link>https://dtai.cs.kuleuven.be/posts/post/thomas-winters/computational_humor_mopjesbot/</link><pubDate>Mon, 23 Mar 2020 23:52:28 +0100</pubDate><guid>https://dtai.cs.kuleuven.be/posts/post/thomas-winters/computational_humor_mopjesbot/</guid><description>&lt;h3 id="computational-humor">Computational humor&lt;/h3>
+&lt;/ul></description></item><item><title>Can computers create jokes?</title><link>https://dtai.cs.kuleuven.be/stories/post/thomas-winters/computational_humor_mopjesbot/</link><pubDate>Mon, 23 Mar 2020 23:52:28 +0100</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/thomas-winters/computational_humor_mopjesbot/</guid><description>&lt;h3 id="computational-humor">Computational humor&lt;/h3>
 &lt;p>Can computers be funny?
 Certainly your virtual assistant (e.g. &lt;em>Siri&lt;/em> or &lt;em>Alexa&lt;/em>) is able to tell a joke if you ask for one, but these are of course pre-written, human-made jokes.
 One might wonder if computers are already advanced enough to understand how to construct good jokes.
