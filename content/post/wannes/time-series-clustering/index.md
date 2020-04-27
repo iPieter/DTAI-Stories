@@ -34,6 +34,11 @@ This post is based on the following publications:
 
 - [COBRAS-TS: A new approach to Semi-Supervised Clustering of Time Series](https://dtai.cs.kuleuven.be/software/cobras/cobras_ts_cameraready.pdf). Van Craenendonck, T., Meert, W., Dumancic, S. & Blockeel, H. Discovery Science, 2018.
 
+Software is available in the following toolboxes:
+
+- [COBRAS](https://dtai.cs.kuleuven.be/software/cobras/)
+- [DTAIDistance](https://github.com/wannesm/dtaidistance/)
+
 {{< /relpub >}}
 
 Clustering is one of the most widely used techniques for time series because it allows to identify and summarize patterns that are of interest (e.g., frequent or anomalous patterns). Furthermore, it does not rely on costly human supervision of time-consuming labeling.
@@ -75,7 +80,7 @@ An interface is provided to the user that actively asks for feedback about time 
 
 {{< figure src="cobras_schema.png" width="400px" alt="GUI" >}}
 
-![gui](cobras_example.png)
+{{< figure src="cobras_example.png" width="100%" alt="GUI" >}}
 
 The toolbox is available at https://dtai.cs.kuleuven.be/software/cobras/ .
 
