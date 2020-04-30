@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DTAI</title><link>https://dtai.cs.kuleuven.be/stories/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/index.xml" rel="self" type="application/rss+xml"/><description>DTAI</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 10:36:34 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>DTAI</title><link>https://dtai.cs.kuleuven.be/stories/</link></image><item><title>DeepProbLog</title><link>https://dtai.cs.kuleuven.be/stories/post/robin-manhaeve/deepproblog/</link><pubDate>Tue, 31 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/robin-manhaeve/deepproblog/</guid><description>&lt;p>This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DTAI</title><link>https://dtai.cs.kuleuven.be/stories/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/index.xml" rel="self" type="application/rss+xml"/><description>DTAI</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2020 10:37:29 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>DTAI</title><link>https://dtai.cs.kuleuven.be/stories/</link></image><item><title>Exploring How Vaep Values Actions</title><link>https://dtai.cs.kuleuven.be/stories/post/sports/exploring-how-vaep-values-actions/</link><pubDate>Mon, 27 Apr 2020 10:37:29 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/sports/exploring-how-vaep-values-actions/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;p>We created an interactive tool to explore how VAEP values player actions in soccer.&lt;/p>
+&lt;p>See the full post at &lt;a href="https://dtai.cs.kuleuven.be/sports/blog/exploring-how-vaep-values-actions">https://dtai.cs.kuleuven.be/sports/blog/exploring-how-vaep-values-actions&lt;/a>&lt;/p>
+&lt;/small>
+&lt;/div>
+&lt;/div></description></item><item><title>DeepProbLog</title><link>https://dtai.cs.kuleuven.be/stories/post/robin-manhaeve/deepproblog/</link><pubDate>Tue, 31 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/robin-manhaeve/deepproblog/</guid><description>&lt;p>This is a brief overview of DeepProbLog, a neuro-symbolic framework that integrates the probabilistic logic programming language ProbLog with neural networks.
 The full paper can be found
 &lt;a href="https://arxiv.org/abs/1907.08194" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;h2 id="what-is-deepproblog">What is DeepProbLog?&lt;/h2>
@@ -100,7 +108,11 @@ In the context of clustering time series, the subjectiveness of clustering is ev
 &lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_example_hu4e6b9924bf96602c22d2e8c89b3568aa_221661_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="100%" height="549">
 &lt;/a>
 &lt;/figure>
-&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>&lt;div class="card">
+&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;div class="card">
 &lt;div class="card-body">
 &lt;p>
 &lt;small>
@@ -111,6 +123,9 @@ This post is based on the following publications:
 &lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
 &lt;li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
 &lt;/ul>
+&lt;/small>
+&lt;/div>
+&lt;/div>
 &lt;/small>
 &lt;/div>
 &lt;/div>
@@ -295,4 +310,12 @@ Or, as our algorithm might say:&lt;/p>
 &lt;blockquote>
 &lt;p>It&amp;rsquo;s a branch of artificial intelligence which uses computers in humor research and is a claim of questionable accuracy?&lt;/p>
 &lt;p>Computational Rumor&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+&lt;/blockquote></description></item><item><title>Player vectors: Characterizing soccer players' playing styles</title><link>https://dtai.cs.kuleuven.be/stories/post/sports/player-vectors-characterizing-soccer-players-playing-style/</link><pubDate>Tue, 12 Nov 2019 10:37:29 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/sports/player-vectors-characterizing-soccer-players-playing-style/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;p>We give an intuitive explanation of our recent ECMLPKDD 2019 paper on characterizing soccer players’ style of play based on event stream data, provide illustrative use cases and release a small interactive demo.&lt;/p>
+&lt;p>See the full post at &lt;a href="https://dtai.cs.kuleuven.be/sports/blog/player-vectors-characterizing-soccer-players-playing-style">https://dtai.cs.kuleuven.be/sports/blog/player-vectors-characterizing-soccer-players-playing-style&lt;/a>&lt;/p>
+&lt;/small>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

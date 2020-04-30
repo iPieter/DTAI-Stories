@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flexible supervision | DTAI</title><link>https://dtai.cs.kuleuven.be/stories/tags/flexible-supervision/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/tags/flexible-supervision/index.xml" rel="self" type="application/rss+xml"/><description>Flexible supervision</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 10:36:34 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>Flexible supervision</title><link>https://dtai.cs.kuleuven.be/stories/tags/flexible-supervision/</link></image><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>&lt;div class="card">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flexible supervision | DTAI</title><link>https://dtai.cs.kuleuven.be/stories/tags/flexible-supervision/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/tags/flexible-supervision/index.xml" rel="self" type="application/rss+xml"/><description>Flexible supervision</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 10:36:34 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>Flexible supervision</title><link>https://dtai.cs.kuleuven.be/stories/tags/flexible-supervision/</link></image><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;div class="card">
 &lt;div class="card-body">
 &lt;p>
 &lt;small>
@@ -9,6 +13,9 @@ This post is based on the following publications:
 &lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
 &lt;li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
 &lt;/ul>
+&lt;/small>
+&lt;/div>
+&lt;/div>
 &lt;/small>
 &lt;/div>
 &lt;/div>

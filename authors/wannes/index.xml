@@ -72,7 +72,11 @@ In the context of clustering time series, the subjectiveness of clustering is ev
 &lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_example_hu4e6b9924bf96602c22d2e8c89b3568aa_221661_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="100%" height="549">
 &lt;/a>
 &lt;/figure>
-&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>&lt;div class="card">
+&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;div class="card">
 &lt;div class="card-body">
 &lt;p>
 &lt;small>
@@ -83,6 +87,9 @@ This post is based on the following publications:
 &lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
 &lt;li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
 &lt;/ul>
+&lt;/small>
+&lt;/div>
+&lt;/div>
 &lt;/small>
 &lt;/div>
 &lt;/div>

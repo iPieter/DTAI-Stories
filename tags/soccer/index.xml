@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Soccer | DTAI</title><link>https://dtai.cs.kuleuven.be/stories/tags/soccer/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/tags/soccer/index.xml" rel="self" type="application/rss+xml"/><description>Soccer</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2020 10:37:29 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>Soccer</title><link>https://dtai.cs.kuleuven.be/stories/tags/soccer/</link></image><item><title>Exploring How Vaep Values Actions</title><link>https://dtai.cs.kuleuven.be/stories/post/sports/exploring-how-vaep-values-actions/</link><pubDate>Mon, 27 Apr 2020 10:37:29 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/sports/exploring-how-vaep-values-actions/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;p>We created an interactive tool to explore how VAEP values player actions in soccer.&lt;/p>
+&lt;p>See the full post at &lt;a href="https://dtai.cs.kuleuven.be/sports/blog/exploring-how-vaep-values-actions">https://dtai.cs.kuleuven.be/sports/blog/exploring-how-vaep-values-actions&lt;/a>&lt;/p>
+&lt;/small>
+&lt;/div>
+&lt;/div></description></item><item><title>Player vectors: Characterizing soccer players' playing styles</title><link>https://dtai.cs.kuleuven.be/stories/post/sports/player-vectors-characterizing-soccer-players-playing-style/</link><pubDate>Tue, 12 Nov 2019 10:37:29 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/sports/player-vectors-characterizing-soccer-players-playing-style/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;p>We give an intuitive explanation of our recent ECMLPKDD 2019 paper on characterizing soccer players’ style of play based on event stream data, provide illustrative use cases and release a small interactive demo.&lt;/p>
+&lt;p>See the full post at &lt;a href="https://dtai.cs.kuleuven.be/sports/blog/player-vectors-characterizing-soccer-players-playing-style">https://dtai.cs.kuleuven.be/sports/blog/player-vectors-characterizing-soccer-players-playing-style&lt;/a>&lt;/p>
+&lt;/small>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

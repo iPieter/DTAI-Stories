@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open-Source Software | DTAI</title><link>https://dtai.cs.kuleuven.be/stories/tags/open-source-software/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/tags/open-source-software/index.xml" rel="self" type="application/rss+xml"/><description>Open-Source Software</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 16:58:21 +0100</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>Open-Source Software</title><link>https://dtai.cs.kuleuven.be/stories/tags/open-source-software/</link></image><item><title>Time Series Clustering</title><link>https://dtai.cs.kuleuven.be/stories/post/wannes/time-series-clustering/</link><pubDate>Tue, 24 Mar 2020 16:58:21 +0100</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/wannes/time-series-clustering/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;p>This post is based on the following publications:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://dtai.cs.kuleuven.be/software/cobras/cobras_ts_cameraready.pdf">COBRAS-TS: A new approach to Semi-Supervised Clustering of Time Series&lt;/a>. Van Craenendonck, T., Meert, W., Dumancic, S. &amp;amp; Blockeel, H. Discovery Science, 2018.&lt;/li>
+&lt;/ul>
+&lt;p>Software is available in the following toolboxes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">COBRAS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/wannesm/dtaidistance/">DTAIDistance&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/small>
+&lt;/div>
+&lt;/div>
+&lt;p>Clustering is one of the most widely used techniques for time series because it allows to identify and summarize patterns that are of interest (e.g., frequent or anomalous patterns). Furthermore, it does not rely on costly human supervision of time-consuming labeling.
+As a result, time series clustering has been studied for many different applications such as astronomy, biology, meteorology, medicine, finance, robotics, engineering, etc..&lt;/p>
+&lt;h2 id="unsupervised-clustering-dtw">Unsupervised Clustering: DTW&lt;/h2>
+&lt;p>Time series clustering is heavily dependent on the choice of the distance used to compare two series. Typically, one is interested in similarity between shapes represented by a series, irrespective of phase or amplitude. And while many distance measures have been proposed, it has been shown that distance measures that can deal with invariances to amplitude and phase perform particularly well.
+One of the best performing similarity measures is Dynamic Time Warping (DTW).&lt;/p>
+&lt;figure id="figure-dynamic-time-distance-warping-between-two-series">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_warp_hu56a5075f5e012b20bb536436aa071195_51331_2000x2000_fit_lanczos_2.png" data-caption="Dynamic Time Distance: Warping between two series">
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_warp_hu56a5075f5e012b20bb536436aa071195_51331_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="400" height="290">
+&lt;/a>
+&lt;figcaption>
+Dynamic Time Distance: Warping between two series
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The resulting clustering is robust against small changes between time series. As can be seen in the figure underneath, DTW allows a clustering that nicely groups similar series.&lt;/p>
+&lt;figure id="figure-time-series-clustering-with-dtw">
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_clustering_hu1e289b70cecb573da4502978abb095f3_170841_2000x2000_fit_lanczos_2.png" data-caption="Time series clustering with DTW">
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/dtw_clustering_hu1e289b70cecb573da4502978abb095f3_170841_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="620" height="600">
+&lt;/a>
+&lt;figcaption>
+Time series clustering with DTW
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The toolbox is available at &lt;a href="https://github.com/wannesm/dtaidistance/">https://github.com/wannesm/dtaidistance/&lt;/a> .&lt;/p>
+&lt;h2 id="semi-supervised-clustering-cobras">Semi-supervised Clustering: COBRAS&lt;/h2>
+&lt;p>Clustering is ubiquitous in data analysis. There is a large diversity in algorithms, loss functions, similarity measures, etc. This is partly due to the fact that clustering is inherently subjective: in many cases, there is no single correct clustering, and different users may prefer different clusterings, depending on their goals and prior knowledge [17]. Depending on their preference, they should use the right algorithm, similarity measure, loss function, hyperparameter settings, etc. This requires a fair amount of knowledge and expertise on the user&amp;rsquo;s side.
+Semi-supervised clustering methods deal with this subjectiveness in a differ- ent manner. They allow the user to specify constraints that express their subjective interests. These constraints can then guide the algorithm towards solutions that the user finds interesting. Many such systems obtain these constraints by asking the user to answer queries of the following type: should these two elements be in the same cluster? A so-called must-link constraint is obtained if the answer is yes, a cannot-link otherwise. In many situations, answering this type of questions is much easier for the user than selecting the right algorithm, defining the similarity measure, etc. Active semi-supervised clustering methods
+aim to limit the number of queries that is required to obtain a good clustering by selecting informative pairs to query.
+In the context of clustering time series, the subjectiveness of clustering is even more prominent. In some contexts, the time scale matters, in other contexts it does not. Similarly, the scale of the amplitude may (not) matter. One may want to cluster time series based on certain types of qualitative behavior (monotonic, periodic, &amp;hellip;), local patterns that occur in them, etc. Despite this variability, and although there is a plethora of work on time series clustering, semi-supervised clustering of time series has only very recently started receiving attention.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_logo_hu27e11e8a0168bda589412849cb53f1c4_22373_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_logo_hu27e11e8a0168bda589412849cb53f1c4_22373_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="200px" height="350">
+&lt;/a>
+&lt;/figure>
+&lt;p>Clustering is ubiquitous in data analysis, including analysis of time series. But it is inherently subjective: different users may prefer different clusterings for a particular dataset. Semi-supervised clustering addresses this by allowing the user to provide examples of instances that should (not) be in the same cluster.&lt;/p>
+&lt;p>The COBRAS-TS algorithm is a semi-supervised clustering method that can use indirect feedback from users. It clusters with the user in the loop. The user can provide indirect feedback where it is only required to tell the system for a few time series whether two time series represent the same behavior or not. As a result the COBRAS-TS system can identify clusters that are characterized by small local patterns.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img1_hu4ae0b56b08877aad3dec303e3d3906a2_202965_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img1_hu4ae0b56b08877aad3dec303e3d3906a2_202965_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Disconnected modes in a cluster" width="400px" height="373">
+&lt;/a>
+&lt;/figure>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img2_hu3fa8e371462bfbb27ad46e311cd1fe6e_45246_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/img2_hu3fa8e371462bfbb27ad46e311cd1fe6e_45246_2000x2000_fit_lanczos_2.png" class="lazyload" alt="Comparison" width="400px" height="155">
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>An interface is provided to the user that actively asks for feedback about time series where the method is the most unsure about how to cluster them.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_schema_hu81961e73cefbbf74308329810cb7932d_33807_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="400px" height="218">
+&lt;/a>
+&lt;/figure>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_example_hu4e6b9924bf96602c22d2e8c89b3568aa_221661_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/time-series-clustering/cobras_example_hu4e6b9924bf96602c22d2e8c89b3568aa_221661_2000x2000_fit_lanczos_2.png" class="lazyload" alt="GUI" width="100%" height="549">
+&lt;/a>
+&lt;/figure>
+&lt;p>The toolbox is available at &lt;a href="https://dtai.cs.kuleuven.be/software/cobras/">https://dtai.cs.kuleuven.be/software/cobras/&lt;/a> .&lt;/p></description></item><item><title>Anomaly Detection with User Feedback</title><link>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</link><pubDate>Tue, 24 Mar 2020 10:36:34 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/anomaly-detection/anomaly-detection-with-user-feedback/</guid><description>
+&lt;div class="card relpub">
+&lt;div class="card-body">
+&lt;small>
+&lt;div class="card">
+&lt;div class="card-body">
+&lt;p>
+&lt;small>
+This post is based on the following publications:
+&lt;/p>
+&lt;ul>
+&lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf">Semi-supervised Anomaly Detection with an Application to Water Analytics&lt;/a>. Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 2018.
+&lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
+&lt;li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
+&lt;/ul>
+&lt;/small>
+&lt;/div>
+&lt;/div>
+&lt;/small>
+&lt;/div>
+&lt;/div>
+&lt;p>Anomaly detection deals with situations where mostly &lt;em>normal&lt;/em> behaviour is observed and one is interested in detecting deviations from this normal behaviour. Examples of &lt;em>abnormal&lt;/em> behaviour, the &lt;em>anomalies&lt;/em>, are often not available because they are expensive to gather (e.g., breaking a machine) or they are not yet known (e.g., adversarial behaviour). Anomaly detection models typically learn what normal behaviour is based on the distribution of the data and a small number of labels proved by an expert (i.e., information about whether the observed behaviour is &lt;em>normal&lt;/em> or &lt;em>abnormal&lt;/em>).&lt;/p>
+&lt;p>Due to recent developments in Industry 4.0 and Internet-of-Things technologies, companies in all types of industries can continuously monitor all aspects of a production process and visualize them in a dashboard. Equipment is monitored using a variety of sensors, natural resource usage is tracked, and interventions are recorded. In this context, a common task is to identify anomalous behavior from the time series data generated by sensors. As manually analyzing such data is laborious and expensive, automated approaches have the potential to be much more efficient as well as cost effective. While anomaly detection could be posed as a supervised learning problem, typically this is not possible as few or no labeled examples of anomalous behavior are available and it is oftentimes infeasible or undesirable to collect them (e.g., you do not want to break an expensive machine to collect labels). Therefore, unsupervised approaches are commonly employed which typically identify anomalies as deviations from normal (i.e., common or frequent) behavior. However, in many real-world settings several types of normal behavior exist that occur less frequently than some anomalous behaviors.&lt;/p>
+&lt;p>Therefore, one of the DTAI research lines is focused on augmenting anomaly detection with &lt;strong>flexible user feedback&lt;/strong>. We refer to this type of feedback as &amp;lsquo;flexible&amp;rsquo; because we want to allow the user to:&lt;/p>
+&lt;ul>
+&lt;li>Label only part of the instances;&lt;/li>
+&lt;li>Give other feedback than only labels (e.g. these instances are not the same);&lt;/li>
+&lt;li>Label instances from one dataset and reuse them in another dataset (e.g. label data collected for one machine/store and use it for another one).&lt;/li>
+&lt;/ul>
+&lt;h2 id="including-flexible-user-feedback">Including flexible user-feedback&lt;/h2>
+&lt;p>Anomaly detection can naturally be posed as an unsupervised learning task. Typically, unsupervised approaches exploit the underlying assumption that anomalies occur infrequently, which means they fall in low-density regions of the instance space, or that anomalies are far away from normal instances to identity them. However, real-world data regularly violate this assumption, degrading the unsupervised approaches’ performance (e.g., system maintenance can occur infrequently and irregularly, but is not anomalous). Labeled data offers the possibility to correct the mistakes made by unsupervised detectors. Unfortunately, a fully supervised approach to anomaly detection is infeasible due to the fact that collecting examples of real-world anomalies is often expensive (e.g., a machine breaking), meaning that is not a viable strategy to permit anomalous behavior for the sake of data generation. This has spurred interest in semi-supervised approaches to anomaly detection, usually in conjunction with active learning to efﬁciently collect the labels.&lt;/p>
+&lt;h3 id="semi-supervised-learning">Semi-supervised learning&lt;/h3>
+&lt;p>Sometimes there is some information available. For example, some labels might be known or the user can answer a few question.
+An approach used in our research is a constrained-clustering-based approach for anomaly detection that works in both an unsupervised and semi-supervised setting. Starting from an unlabeled data set, the approach is able to gradually incorporate expert-provided feedback to improve its performance.&lt;/p>
+&lt;p>&lt;img src="featured.png" alt="Anomatools example">&lt;/p>
+&lt;p>The methods presented here are implemented as part of the
+&lt;a href="https://github.com/Vincent-Vercruyssen/anomatools" target="_blank" rel="noopener">Anomatools toolbox&lt;/a>.&lt;/p>
+&lt;h4 id="references">References:&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf" target="_blank" rel="noopener">Semi-supervised Anomaly Detection with an Application to Water Analytics&lt;/a>. Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 17 November 2018.&lt;/li>
+&lt;/ul>
+&lt;h3 id="transfer-learning">Transfer Learning&lt;/h3>
+&lt;p>Real-world anomaly detection tasks often involve monitoring numerous assets, each of which is only slightly different. Such a situation may arise when monitoring machines in a factory, resource usage in a chain of retail stores, or windturbine farms. These use cases entail monitoring a large number of assets as a big retail chain could have 100s if not 1000s of stores. Therefore, even when using a strategy like active learning, it may be impossible to collect labels for each individual asset. Given that these use cases involve multiple similar anomaly detection tasks, it may be possible to employ transfer learning to transfer labeled instances from one task to another. This could then alleviate the need to collect labels for each task separately.&lt;/p>
+&lt;p>Motivated by these types of applications, we developed LocIT, a transfer learning algorithm tailored towards anomaly detection. It works in two steps. First, given a partially labeled source dataset and an unlabeled target dataset, LocIT selects a subset of the labeled source instances to transfer to the target dataset. It picks those instances that have similar localized data distributions in both the source and target dataset. Second, it assigns an anomaly score using a semi-supervised nearest-neighbor approach that considers both the transferred, labeled source instances and the unlabeled target instances.&lt;/p>
+&lt;p>&lt;img src="locit1.png" alt="LocIt Example">&lt;/p>
+&lt;p>The LocIT method is available at &lt;a href="https://github.com/Vincent-Vercruyssen/LocIT">https://github.com/Vincent-Vercruyssen/LocIT&lt;/a>.&lt;/p>
+&lt;h4 id="references-1">References:&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf" target="_blank" rel="noopener">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 7 February 2020.&lt;/li>
+&lt;/ul>
+&lt;h2 id="types-of-patterns">Types of Patterns&lt;/h2>
+&lt;h3 id="missing-patterns">Missing patterns&lt;/h3>
+&lt;p>The standard time series anomaly detection task involves identifying portions of the data characterized by the presence of unexpected or abnormal behavior. The figure underneath (b) illustrates the canonical anomaly detection problem where the grey-shaded region highlights a pattern (i.e., a collection of points) that substantially differs from the other patterns present in the data such as the highlighted green bell-shaped pattern in Figure 1a. In contrast, this paper addresses detecting a radically diﬀerent type of anomalous behavior: the absence of a pattern. The red-shaded region in the figure (c) shows a portion of the time series where we could reasonable expect to see an occurence of the bell-shaped pattern. Detecting such an anomaly is challenging as the observed measurements in the red-shaded region also correspond to typical, normal behavior in the time series.&lt;/p>
+&lt;p>&lt;img src="fzappa1.png" alt="FZappa Example">&lt;/p>
+&lt;p>In many real-world use cases, absent patterns often correspond to signiﬁcant anomalies. The next figure shows an illustrative real-world resource monitoring use case. It involves monitoring a retail store&amp;rsquo;s water usage over several weeks. The store&amp;rsquo;s water distribution system contains a device that automatically performs self-cleaning. Although the water usage during a self-cleaning action is always slightly different, the highlighted segments show that a recognizable pattern emerges in the data. A failure of the cleaning action neither causes any immediate problems nor any noticeable eﬀects in the water usage data. However, after a while a sudden breakdown will occur that halts the water distribution and a large amount of water will be disposed through an unmonitored valve. Other real-world use cases, for instance, are found in network monitoring where CPU load is used to monitor data backup operations and recurring failover system tests.&lt;/p>
+&lt;p>&lt;img src="fzappa2.png" alt="FZappa Example">&lt;/p>
+&lt;p>Detecting this type of anomaly requires determining when a sporadically occurring pattern is absent. Standard approaches struggle in this setting as it violates the common assumption of anomaly detection that frequent behavior is normal and infrequent behavior is abnormal. By definition, the most common behavior of the sporadically occurring pattern is absence. Furthermore, an absent pattern is not necessarily replaced by anomalous behavior.&lt;/p>
+&lt;p>Despite the prevalence of this type of anomaly in practice, little attention has been paid toward developing algorithms that can detect the suspicious absence of a pattern. We developed FZapPa, a data-driven algorithm that can automatically detect anomalies characterized by an absent pattern. First, FZapPa views pattern detection through the lens of learning from positive and unlabeled (PU) data. It uses a small number of example occurrences of the pattern to train a PU classiﬁer, and the learned model is used to identify the remaining pattern occurrences. Second, FZapPa analyzes the time series to learn the relevant indirect context in which the pattern is expected to appear and models its occurrence using a probabilistic model. Based on this model, it then predicts an anomaly score to detect absent occurrences.&lt;/p>
+&lt;p>FZapPa is available at: &lt;a href="https://github.com/Vincent-Vercruyssen/absent_pattern_detection">https://github.com/Vincent-Vercruyssen/absent_pattern_detection&lt;/a>&lt;/p>
+&lt;h4 id="references-2">References&lt;/h4>
+&lt;ul>
+&lt;li>&amp;ldquo;Now you see it, now you don&amp;rsquo;t!&amp;rdquo; Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 7 May 2020.&lt;/li>
+&lt;/ul></description></item></channel></rss>
