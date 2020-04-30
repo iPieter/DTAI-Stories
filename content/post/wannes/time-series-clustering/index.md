@@ -34,10 +34,7 @@ This post is based on the following publications:
 
 - [COBRAS-TS: A new approach to Semi-Supervised Clustering of Time Series](https://dtai.cs.kuleuven.be/software/cobras/cobras_ts_cameraready.pdf). Van Craenendonck, T., Meert, W., Dumancic, S. & Blockeel, H. Discovery Science, 2018.
 
-Software is available in the following toolboxes:
-
-- [COBRAS](https://dtai.cs.kuleuven.be/software/cobras/)
-- [DTAIDistance](https://github.com/wannesm/dtaidistance/)
+Software is available in the following toolboxes: [COBRAS](https://dtai.cs.kuleuven.be/software/cobras/), [DTAIDistance](https://github.com/wannesm/dtaidistance/)
 
 {{< /relpub >}}
 

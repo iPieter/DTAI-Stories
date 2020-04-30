@@ -30,20 +30,13 @@ projects: ["Example Project"]
 
 {{< relpub >}}
 
-<div class="card">
-  <div class="card-body">
-<p>
-<small>
 This post is based on the following publications:
-</p>
-<ul>
-<li> <a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf">Semi-supervised Anomaly Detection with an Application to Water Analytics</a>. Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 2018.
-<li> <a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection</a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
-<li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
-</ul>
-</small>
-  </div>
-</div>
+
+- [Semi-supervised Anomaly Detection with an Application to Water Analytics](https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf). Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 2018.
+- [Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection](https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf). Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
+- "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
+
+The results are shared in the following toolboxes: [Anomatools toolbox](https://github.com/Vincent-Vercruyssen/anomatools), [LocIT](https://github.com/Vincent-Vercruyssen/LocIT), [FZapPa](https://github.com/Vincent-Vercruyssen/absent_pattern_detection)
 
 {{< /relpub >}}
 
