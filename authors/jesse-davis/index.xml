@@ -2,20 +2,13 @@
 &lt;div class="card relpub">
 &lt;div class="card-body">
 &lt;small>
-&lt;div class="card">
-&lt;div class="card-body">
-&lt;p>
-&lt;small>
-This post is based on the following publications:
-&lt;/p>
+&lt;p>This post is based on the following publications:&lt;/p>
 &lt;ul>
-&lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf">Semi-supervised Anomaly Detection with an Application to Water Analytics&lt;/a>. Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 2018.
-&lt;li> &lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.
-&lt;li> "Now you see it, now you don't!" Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.
+&lt;li>&lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2019/ECMLPKDD_conference_manuscript.pdf">Semi-supervised Anomaly Detection with an Application to Water Analytics&lt;/a>. Vincent Vercruyssen, Wannes Meert, Gust Verbruggen, Koen Maes, Ruben Bäumer, Jesse Davis. IEEE International Conference on Data Mining. Singapore, 2018.&lt;/li>
+&lt;li>&lt;a href="https://people.cs.kuleuven.be/~vincent.vercruyssen/publications/2020/AAAI_conference_manuscript.pdf">Transfer Learning for Anomaly Detection through Localized and Unsupervised Instance Selection&lt;/a>. Vincent Vercruyssen, Wannes Meert, Jesse Davis. Thirty-Fourth AAAI Conference on Artificial Intelligence. New York, 2020.&lt;/li>
+&lt;li>&amp;ldquo;Now you see it, now you don&amp;rsquo;t!&amp;rdquo; Detecting Suspicious Pattern Absences in Continuous Time Series. Vincent Vercruyssen, Wannes Meert, Jesse Davis. SIAM International Conference on Data Mining. Cincinnati, 2020.&lt;/li>
 &lt;/ul>
-&lt;/small>
-&lt;/div>
-&lt;/div>
+&lt;p>The results are shared in the following toolboxes: &lt;a href="https://github.com/Vincent-Vercruyssen/anomatools">Anomatools toolbox&lt;/a>, &lt;a href="https://github.com/Vincent-Vercruyssen/LocIT">LocIT&lt;/a>, &lt;a href="https://github.com/Vincent-Vercruyssen/absent_pattern_detection">FZapPa&lt;/a>&lt;/p>
 &lt;/small>
 &lt;/div>
 &lt;/div>

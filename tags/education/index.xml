@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Education | DTAI</title><link>https://dtai.cs.kuleuven.be/stories/tags/education/</link><atom:link href="https://dtai.cs.kuleuven.be/stories/tags/education/index.xml" rel="self" type="application/rss+xml"/><description>Education</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 30 Nov 2019 11:18:29 +0200</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>Education</title><link>https://dtai.cs.kuleuven.be/stories/tags/education/</link></image><item><title>ML Student Projects: Dots-and-Boxes</title><link>https://dtai.cs.kuleuven.be/stories/post/wannes/ml-student-projects-dots-and-boxes/</link><pubDate>Sat, 30 Nov 2019 11:18:29 +0200</pubDate><guid>https://dtai.cs.kuleuven.be/stories/post/wannes/ml-student-projects-dots-and-boxes/</guid><description>&lt;p>This games was explored in the course &amp;ldquo;Machine Learning: Project&amp;rdquo; (Prof. Hendrik Blockeel, Dr. Wannes Meert).
+Students developed agents that are able to play the Dots-and-Boxes game.&lt;/p>
+&lt;p>The game implementation is available at &lt;a href="https://github.com/wannesm/dotsandboxes">https://github.com/wannesm/dotsandboxes&lt;/a> (and can be played interactively).&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/ml-student-projects-dots-and-boxes/dotsandboxes_hub2e3427bdbb71761d7b64c762a376112_37074_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/ml-student-projects-dots-and-boxes/dotsandboxes_hub2e3427bdbb71761d7b64c762a376112_37074_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="328" height="234">
+&lt;/a>
+&lt;/figure>
+&lt;h3 id="rules-of-the-game">Rules of the game&lt;/h3>
+&lt;blockquote>
+&lt;p>Starting with an empty grid of dots, two players take turns adding a single horizontal or vertical line between two unjoined adjacent dots. The player who completes the fourth side of a 1×1 box earns one point and takes another turn. (A point is typically recorded by placing a mark that identifies the player in the box, such as an initial.) The game ends when no more lines can be placed. The winner is the player with the most points. The board may be of any size. When short on time, a 2×2 board (a square of 9 dots) is good for beginners. A 5×5 is good for experts.
+(
+&lt;a href="https://en.wikipedia.org/wiki/Dots_and_Boxes" target="_blank" rel="noopener">Wikipedia&lt;/a>)&lt;/p>
+&lt;/blockquote>
+&lt;figure >
+&lt;a data-fancybox="" href="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/ml-student-projects-dots-and-boxes/dotsandboxes2_hu8615e540607977328b5ae3129c456413_43193_2000x2000_fit_lanczos_2.png" >
+&lt;img data-src="https://dtai.cs.kuleuven.be/stories/stories/post/wannes/ml-student-projects-dots-and-boxes/dotsandboxes2_hu8615e540607977328b5ae3129c456413_43193_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="300px" height="428">
+&lt;/a>
+&lt;/figure>
+&lt;blockquote>
+&lt;p>While the game has very simple rules, it has a large number of possible states (more speciﬁcally,
+$|S| = 2^{r(c+1)+(r+1)c}$ states for an $r \times c$ game), and an even larger number ($\log_2(|S|)!$) of unique games can be played. No general strategy for optimal play is known. Currently, a 4 × 5 game is the largest game that is solved.
+(Barker, J. K. and Korf, R. E. Solving dots-and-boxes. AAAI 2012)&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="agents">Agents&lt;/h3>
+&lt;p>The agents available in the Dots and Boxes demo are developed by students from the Master of Computer Science at KU Leuven as part of the 2017-2018 course Machine Learning Project, taught by Prof. Hendrik Blockeel and Wannes Meert.&lt;/p>
+&lt;p>The machine learning technologies used in the agents are:&lt;/p>
+&lt;ul>
+&lt;li>Monte-Carlo Tree Search to simulate game-play&lt;/li>
+&lt;li>Q-learning to learn about good actions&lt;/li>
+&lt;li>Artificial Neural Net / Deep learning to learn about good board states&lt;/li>
+&lt;li>Logic rules to reason about domain specific concepts such as ‘chains’ and ‘sacrificing&amp;rsquo;&lt;/li>
+&lt;/ul>
+&lt;h3 id="credits">Credits&lt;/h3>
+&lt;p>Hendrik Blockeel, Wannes Meert, Pieter Robberechts, Arne De Brabandere and Sebastijan Dumančić contributed to this course.&lt;/p></description></item></channel></rss>
