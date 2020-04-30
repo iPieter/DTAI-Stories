@@ -5,7 +5,7 @@ title: "Anomaly Detection with User Feedback"
 subtitle: "Learning context-aware anomaly detection models"
 summary: "An overview of DTAI research on how to handle user feedback for contextual anomaly detection."
 authors: ["wannes", "vincent-vercruyssen", "jesse-davis"]
-tags: ["Anomaly Detection", "Semi-supervised learning", "Outlier detection", "Active learning", "Flexible supervision", "Application"]
+tags: ["Anomaly Detection", "Semi-supervised learning", "Outlier detection", "Active learning", "Flexible supervision", "Application", "Open-Source Software"]
 categories: ["Anomaly Detection", "Engineering and Sensors"]
 date: 2020-03-24T10:36:34+02:00
 lastmod: 2020-03-24T10:36:34+02:00
@@ -28,6 +28,8 @@ image:
 projects: ["Example Project"]
 ---
 
+{{< relpub >}}
+
 <div class="card">
   <div class="card-body">
 <p>
@@ -42,6 +44,8 @@ This post is based on the following publications:
 </small>
   </div>
 </div>
+
+{{< /relpub >}}
 
 
 Anomaly detection deals with situations where mostly *normal* behaviour is observed and one is interested in detecting deviations from this normal behaviour. Examples of *abnormal* behaviour, the *anomalies*, are often not available because they are expensive to gather (e.g., breaking a machine) or they are not yet known (e.g., adversarial behaviour). Anomaly detection models typically learn what normal behaviour is based on the distribution of the data and a small number of labels proved by an expert (i.e., information about whether the observed behaviour is *normal* or *abnormal*).
