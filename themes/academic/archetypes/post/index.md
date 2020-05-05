@@ -9,6 +9,7 @@ authors: []
 tags: []
 # Uncomment your categories:
 categories: [
+#"Anomaly Detection",
 #"Applications of the Knowledge Base System Paradigm",
 #"Applied Research",
 #"Automated Data Science",

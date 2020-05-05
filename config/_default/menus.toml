@@ -23,10 +23,15 @@
 #  url = "#projects"
 #  weight = 30
 
-#[[main]]
-#  name = "Tags"
-#  url = "#tags"
-#  weight = 50
+[[main]]
+  name = "Research Lines"
+  url = "#categories"
+  weight = 50
+
+[[main]]
+  name = "Topics"
+  url = "#tags"
+  weight = 50
 
 #[[main]]
 #  name = "Contact"
