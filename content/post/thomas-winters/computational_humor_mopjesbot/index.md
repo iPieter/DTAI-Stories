@@ -6,7 +6,7 @@ subtitle: "The range of tasks Artificial Intelligenge can fulfill keeps strongly
 summary: ""
 authors: ["Thomas Winters"]
 tags: ["Computational Humor", "Computational Creativity"]
-categories: []
+categories: ["Texts and Web"]
 date: 2020-03-23T23:52:28+01:00
 lastmod: 2020-03-23T23:52:28+01:00
 featured: false

@@ -275,5 +275,5 @@ plugins_js  = []
 ############################
 [dtai]
   fundamental_lines = ['Automated Data Science', 'Constraints', 'Exploratory Data Mining', 'Functional Programming', 'Graph and Network Mining', 'Knowledge Base Systems', 'Predictive Learning and Clustering', 'Privacy, Non-discrimination, and Ethical aspects', 'Probabilistic Programming and Statistical Relational Learning', 'Sports Analytics', 'Static Analysis for Declarative Programming Languages', 'Theoretical Computer Science', 'Verification for Artificial Intelligence and Machine Learnin']
-  applied_lines = ['Applications of the Knowledge Base System Paradigm', 'Bio- and Cheminformatics', 'Engineering and Sensors', 'Games', 'Health', 'Music', 'Robotics']
+  applied_lines = ['Anomaly Detection', 'Applications of the Knowledge Base System Paradigm', 'Bio- and Cheminformatics', 'Engineering and Sensors', 'Games', 'Health', 'Texts and Web', 'Music', 'Robotics']
 
