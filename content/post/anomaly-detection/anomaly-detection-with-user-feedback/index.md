@@ -9,7 +9,7 @@ tags: ["Anomaly Detection", "Semi-supervised learning", "Outlier detection", "Ac
 categories: ["Anomaly Detection", "Engineering and Sensors"]
 date: 2020-03-24T10:36:34+02:00
 lastmod: 2020-03-24T10:36:34+02:00
-featured: true
+featured: false
 draft: false
 
 # Featured image
