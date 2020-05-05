@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Robbert"
+title: "RobBERT: a Dutch Language Model"
 subtitle: "A Dutch RoBERTa-based Language Model"
 summary: "We have developed RobBERT, a language model pre-trained on Dutch texts. This post will give a brief overview of DTAI's work in this field."
 authors: ["Pieter Delobelle", "Thomas Winters", "Bettina Berendt" ]
