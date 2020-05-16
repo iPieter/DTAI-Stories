@@ -15,7 +15,7 @@ categories: [
 "Sports Analytics",
 ]
 date: 2020-04-27T10:37:29+02:00
-lastmod: 2020-05-16:37:29+02:00
+lastmod: 2020-05-16T12:00:00+02:00
 featured: false
 draft: false
 
