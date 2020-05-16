@@ -3,7 +3,13 @@
 
 title: "Player vectors: Characterizing soccer players' playing styles"
 subtitle: ""
-summary: "An intuitive explanation of our recent ECMLPKDD 2019 paper on characterizing soccer players’ style of play based on event stream data, provide illustrative use cases and release a small interactive demo."
+summary: "A player’s style of play is a reoccurring concept when discussing
+soccer as each player approaches the game in a different way. Unfortunately,
+playing style is inherently a subjective and nebulous concept, which makes it
+difficult to capture it in a data-driven manner. This post gives an intuitive
+explanation of our recent ECMLPKDD 2019 paper on this topic, provides
+illustrative use cases and introduces a small interactive demo.
+"
 authors: []
 # Add tags for all research topics you think are relevant:
 tags: ["Sports", "Soccer"]
@@ -34,9 +40,12 @@ projects: []
 
 {{< relpub >}}
 
+![hero](hero.png)
+
 We give an intuitive explanation of our recent ECMLPKDD 2019 paper on characterizing soccer players’ style of play based on event stream data, provide illustrative use cases and release a small interactive demo.
 
-See the full post at https://dtai.cs.kuleuven.be/sports/blog/player-vectors-characterizing-soccer-players-playing-style
+See the full post at https://dtai.cs.kuleuven.be/sports/blog/player-vectors-characterizing-soccer-players-playing-style  
+A demo is available at https://dtai.cs.kuleuven.be/sports/player_vectors
 
 {{< /relpub >}}
 
