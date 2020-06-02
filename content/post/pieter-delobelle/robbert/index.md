@@ -83,7 +83,7 @@ $$P(\text{“giraf"}|\text{“ik zie een &lt;mask&gt; in mijn tuin."})<0.0001$$
 
 Or a more probable suggestion:
 
-$$P(\text{boom"}|\text{“ik zie een &lt;mask&gt; in mijn tuin."})<0.0001$$
+$$P(\text{boom"}|\text{“ik zie een &lt;mask&gt; in mijn tuin."}) = 0.1498$$
 
 In fact, we can even query the model to get the most likely results. For this sentence, RobBERT gives us:
 
