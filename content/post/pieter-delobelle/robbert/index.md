@@ -111,8 +111,8 @@ You can also fine-tune RobBERT on your own (Dutch) data, which can save you a lo
 
 - **Detecting new job titles for VDAB**: Jeroen Van Hautte, Vincent Schelstraete, and Mikaël Wornoo, ‘Leveraging the Inherent Hierarchy of Vacancy Titles for Automated Job Ontology Expansion’, [ArXiv:2004.02814](http://arxiv.org/abs/2004.02814), 6 April 2020.
 - **'Die' versus 'dat' disambiguation for L2 learners**: Small pilot with the 'Die' vs. 'dat' disambiguation model to give feedback to second language learners. [Implemented as a REST api](https://github.com/iPieter/RobBERT/tree/master/examples/die_vs_data_rest_api) to be used alongside a rule-baed system.
-
-
+- **DeepFrog - NLP Suite**: A successor for the Dutch NLP suite Frog with fine-tuned models based on <code>RobBERT-v1-base</code>. [Available on Github](https://github.com/proycon/deepfrog).
+- **'Spelfouten': Dutch spell checking with BERT**: [Various experiments](https://github.com/petervandenabeele/spelfouten) on detecting and correcting grammar mistakes with a focus on frequently made "dt"-mistakes, based on <code>RobBERT-v1-base</code>.
 
 # Results
 We evaluated RobBERT on two tasks with Dutch text inputs: (i) sentiment analysis and distinguishing between _die_ and _dat_. Table 1 shows the results, where we trained most models twice. Once on the full training set and once on a smaller subset, to highlight a benefit of monolingual language resources over multilingual ones.
